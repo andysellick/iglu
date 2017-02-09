@@ -1,0 +1,80 @@
+
+	.block-flow {
+		padding:@blockPadding;
+		.transition( background 0.5s );
+
+		.b-wrapper {
+			display:table;
+			width:100%;
+		}
+		.b-item {
+			display:table-cell;
+			padding:@blockPadding;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.b-item {
+			position:relative;
+			background:#9999ff;
+			color:#FFFFFF;
+
+			&:nth-child(2n+1){
+				background:#9933ff;
+				&:after {
+					border-color:transparent transparent transparent #9999ff;
+				}
+			}
+			&:after {
+				content:"";
+				position:absolute;
+				top:50%;
+				left:0;
+				margin-top:-20px;
+				border-style: solid;
+				border-width: 20px 10px;
+				border-color: transparent transparent transparent #9933ff;
+			}
+			&:first-child {
+				&:after {
+					border-color:transparent transparent transparent #ffffff;
+				}
+			}
+		}
+		
+		&.scrollOn {
+			background:red !important;
+		}
+	}
+
+	@media (min-width:0) and (max-width:@breakpointTablet) {
+		.block-flow {
+			.b-wrapper,
+			.b-item {
+				display:block;
+				width:auto;
+			}
+			.b-item {
+				margin:0 0 20px 0;
+				&:after {
+					top:100%;
+					left:50%;
+					margin:0 0 0 -20px;
+					border-width:10px 20px;
+					border-color:#9999ff  transparent transparent transparent;
+				}
+				&:nth-child(2n+1){
+					&:after {
+						border-color:#9933ff transparent transparent transparent;
+					}
+				}
+				&:last-child {
+					&:after {
+						display:none;
+					}
+				}
+			}
+		}
+	}
+	
+	

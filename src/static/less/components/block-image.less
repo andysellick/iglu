@@ -1,0 +1,30 @@
+
+	.block-image {
+		padding:@blockPadding;
+		font:@blockFont;		
+
+		&.selected {
+			background-color:green;
+		}
+
+		.b-image {
+			display:block;
+			margin:0 auto;
+		}	
+
+		.b-caption {
+			padding:5px;
+			text-align:center;
+		}
+
+		&.fullimage {
+			padding:0;
+
+			.b-caption {
+				padding:10px;
+				background:black;
+				color:white;
+				
+			}
+		}
+	}

@@ -1,0 +1,219 @@
+{
+	"rows": [
+		{
+			"blocks" : [
+				{
+					"type": "text",
+					"width": 4,
+					"title": "This is a text block",
+					"content": "<p>This is a simple text block.</p><p>I'm not sure this is a great way of formatting it.</p>",
+					"classes": "extraclass"
+				},
+				{
+					"type": "image",
+					"width": 4,
+					"src": "moose.jpg",
+					"alt": "This is an image",
+					"caption": "This is the caption of my image",
+					"classes": ""
+				},
+				{
+					"type": "image",
+					"width": 4,
+					"src": "moose.jpg",
+					"alt": "This is an image",
+					"caption": "This is a differently styled image",
+					"classes": "fullimage"
+				}
+			]
+		},
+
+		{
+			"blocks" : [
+				{
+					"type": "map",
+					"width": 6,
+					"lat": -34.397,
+					"lng": 150.644,
+					"zoom": 8,
+					"markers": [
+						{
+							"lat": -34.397,
+							"lng": 150.644,
+							"content": "Map 1, 1"
+						},
+						{
+							"lat": -31.397,
+							"lng": 130.644,
+							"content": "Map 1, 2"
+						},
+						{
+							"lat": -32.397,
+							"lng": 140.644,
+							"content": "Map 1, 3"
+						}
+					],
+					"lines": [
+						{
+							"line": [
+								{
+									"lat": -35,
+									"lng": 155
+								},
+								{
+									"lat": -22,
+									"lng": 128
+								},
+								{
+									"lat": -33,
+									"lng": 142
+								}
+							],
+							"colour": "#FF0000",
+							"opacity": 0.5,
+							"stroke": 10
+						},
+						{
+							"line": [
+								{
+									"lat": -40,
+									"lng": 154
+								},
+								{
+									"lat": -21,
+									"lng": 125
+								},
+								{
+									"lat": -36,
+									"lng": 170
+								}
+							],
+							"colour": "#0000FF",
+							"opacity": 0.3,
+							"stroke": 5
+						}
+					]
+				},
+				{
+					"type": "map",
+					"width": 6,
+					"lat": -34.397,
+					"lng": 150.644,
+					"zoom": 8,
+					"markers": [
+						{
+							"lat": 50,
+							"lng": 40,
+							"content": "Map 2, 1"
+						},
+						{
+							"lat": 55,
+							"lng": 32,
+							"content": "Map 2, 2"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"blocks" : [
+				{
+					"type": "map",
+					"width": 12,
+					"lat": -34.397,
+					"lng": 150.644,
+					"zoom": 8,
+					"markers": [
+						{
+							"lat": 11,
+							"lng": 19,
+							"content": "Map 3, 1"
+						},
+						{
+							"lat": 14,
+							"lng": 17,
+							"content": "Map 3, 2"
+						},
+						{
+							"lat": 22,
+							"lng": 11,
+							"content": "Map 3, 3"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"blocks" : [
+				{
+					"type" : "flow",
+					"width": 12,
+					"content": [
+						"This is a flow or timeline of items",
+						"simple",
+						"If this was generated we could put specific classes based on number onto each item",
+						"or add them manually just as easily with the copy and paste alternative",
+						"so overall it's pretty easy to configure",
+						"styling could be handled entirely manually to create some good looking effects"
+					],
+					"classes": "example",
+					"scrollOffset": 300
+				}
+			]
+		},
+
+		{
+			"blocks": [
+				{
+					"type": "quote",
+					"width": 6,
+					"title": "This is a quote",
+					"content": "The technological limitations are potentially concerning",
+					"citation": "Arthur Smith",
+					"classes": ""
+				},
+				{
+					"type": "statistic",
+					"width": 6,
+					"value": "11%",
+					"text": "of statistics are made up",
+					"classes": ""
+				}
+			]
+		},
+		{
+			"blocks": [
+				{
+					"type": "table",
+					"width": 6,
+					"title": "This is a table",
+					"headings": [
+						"Type of fish",
+						"Habitat",
+						"Size"
+					],
+					"rows": [
+						[
+							"Salmon",
+							"Rivers",
+							"Large"
+						],
+						[
+							"Pike",
+							"Lakes",
+							"Large"
+						],
+						[
+							"Goldfish",
+							"Bowls",
+							"Small"
+						]
+					],
+					"classes": ""
+				}
+			]
+		}
+	]
+}

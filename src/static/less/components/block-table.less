@@ -1,0 +1,30 @@
+
+	.block-table {
+		padding:@blockPadding;
+		.b-title {
+		}
+		.b-table {
+			display:table;
+			width:100%;
+			table-layout: fixed;
+			.td {
+				display:table-cell;
+				padding:0.3em 1em;
+				text-align: center;
+			}
+			.thead {
+				display:table-row;
+				.td {
+					border-bottom:solid 2px silver;
+					font-weight:bold;
+				}
+			}
+			.tbody {
+				display:table-row;
+				background:#f0f0f0;
+				&:nth-child(2n + 1){
+					background:#FFFFFF;
+				}
+			}
+		}
+	}

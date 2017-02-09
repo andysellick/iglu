@@ -1,0 +1,22 @@
+
+	.block-quote {
+		padding:@blockPadding;
+
+		.b-quote {
+			margin:0;
+		}
+
+		.b-text {
+			display:block;
+			&:before,
+			&:after {
+				content:'"';
+				font-size:120%;
+			}
+		}
+
+		.b-cite {
+			display:block;
+			text-align:right;
+		}
+	}
